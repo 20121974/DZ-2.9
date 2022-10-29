@@ -1,9 +1,7 @@
 import K.K;
 import V.V;
 
-import java.util.AbstractMap;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 import java.util.Map;
 
 import static javax.swing.UIManager.put;
@@ -52,12 +50,16 @@ public class Main {
         telephoneDirectory.put("Саша Петров", "8(916)078-07-69");
         System.out.println(telephoneDirectory.get("Саша Петров"));
     }
-    HashMap<String, Integer> collect = new HashMap<>();
-    HashMap<String, List<Integer>> map = new HashMap<>(Map.of("A",List.of(1,2,3),"B", List.of(3,4,5),
+
+    Map<String, List<Integer>> map = new HashMap<>(Map.of("A",List.of(1,2,3),"B", List.of(3,4,5),
             "C", List.of(6,7,8),"D",List.of(9,10,11),"E",List.of(12,13,14));
-    HashMap<String,Integer> copyMap = new HashMap<>();
+    Map<String,Integer> copyMap = new HashMap<>();
     map.addAll(Map copyMap);
-    HashMap<Integer, String> map1 = new HashMap<>(Map.of(1,"A",2,"B",3,"C",4,"D",5,"E",
+    List<Integer> nums = new ArrayList<>(List.of(List.of(1,2,3), List.of(3,4,5),
+            List.of(6,7,8), List.of(9,10,11), List.of(12,13,14));
+    nums.replaceAll (java.awt.List(6, 12, 21, 30, 39));
+    Map<Integer, String> map1 = new HashMap<>(Map.of(1,"A",2,"B",3,"C",4,"D",5,"E",
             6,"F",7,"G",8,"H",9,"I",10,"j"));
+
 
 }

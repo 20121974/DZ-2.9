@@ -12,12 +12,24 @@ public class Map {
         this.map = map;
     }
 
+    public void Map1(HashMap<String, Integer> copyMap) {
+        this.copyMap = copyMap;
+    }
+
     public HashMap<String, List<Integer>> getMap() {
         return map;
     }
 
     public void addMap(Map map) {
         System.out.println(map.getMap());
+    }
+    @Override
+    public String toString() {
+        return super.toString();
+    }
+
+    public HashMap<String, Integer> getCopyMap() {
+        return copyMap;
     }
 
 }
