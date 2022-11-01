@@ -3,50 +3,19 @@ import java.util.Map;
 import java.util.Objects;
 
 public class Collect{
-    HashMap<String, Integer> collect = new HashMap <>();
-    private java.lang.String String;
-    private java.lang.Integer Integer;
-
-    public Collect(HashMap<java.lang.String, java.lang.Integer> collect) {
-        this.collect = collect;
+    private static HashMap<String, Integer> map = new HashMap <>();
+    public static void main(String[] args) {
+        map.put("str1", 5);
+        map.put("str2", 1);
+        map.put("str1", 7);
+        System.out.println((map));
     }
 
-    public HashMap<String, Integer> getCollect() {
-        return collect;
-    }
-    public void putCollect (){//добавление в коллекцию
-        collect.put(String, Integer);
-    }
-    public void containsKey (){//проверка наличия ключа
-        try {
-            boolean b = collect != null;
-        } catch (NullPointerException e) {
-            System.out.println(e.getMessage());
-        }finally {
-            collect.containsKey(String);
+    public static void addToMap(String str, Integer count) {
+        if (map.containsKey(str) && map.get(str).equals(count)) {
+            throw new RuntimeException("We cannot add This str");
         }
-
-
-
-
-}
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-        Collect collect1 = (Collect) o;
-        return collect.equals(collect1.collect);
+        map.put(str, count);
     }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(collect);
-    }
-
-    @Override
-    public String toString() {
-        return "Collect{" +
-                "collect=" + collect +
-                '}';
-    }
 }
