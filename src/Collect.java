@@ -3,7 +3,7 @@ import java.util.Map;
 import java.util.Objects;
 
 public class Collect{
-    private static HashMap<String, Integer> map = new HashMap <>();
+    private static Map<String, Integer> map = new HashMap <>();
     public static void main(String[] args) {
         map.put("str1", 5);
         map.put("str2", 1);

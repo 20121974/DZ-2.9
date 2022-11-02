@@ -1,11 +1,10 @@
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Random;
 
 public class Map {
-    private static final HashMap<String, List<Integer>> mapFrom = new HashMap<>();
-    private static final HashMap<String, Integer> mapTo = new HashMap<>();
+    private static final java.util.Map<String, List<Integer>> mapFrom = new HashMap<String, List<Integer>>();
+    private static final java.util.Map<String, Integer> mapTo = new HashMap<String, Integer>();
 
     public static void main(String[] args) {
         Random random = new Random();

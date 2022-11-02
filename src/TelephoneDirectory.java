@@ -1,15 +1,16 @@
 import java.util.HashMap;
+import java.util.Map;
 
 public class TelephoneDirectory {
-    HashMap<String, String> telephoneDirectory = new HashMap<>();//телефонный справочник
+    Map<java.lang.String, java.lang.String> telephoneDirectory = new HashMap<>();//телефонный справочник
     private java.lang.String String;
 
-    public HashMap<String, String> putTelephoneDirectory (){
+    public Map<java.lang.String, java.lang.String> putTelephoneDirectory (){
     telephoneDirectory.put(String, String);
     return telephoneDirectory;
     }
 
-    public HashMap<String, String> getTelephoneDirectory() {
+    public Map<java.lang.String, java.lang.String> getTelephoneDirectory() {
         return telephoneDirectory;
     }
 }
